@@ -141,6 +141,10 @@ a:hover {
 	color: #000000;
 }
 
+#search-submit:hover {
+	cursor: pointer;
+}
+
 /* Menu */
 
 #menu {
@@ -373,4 +377,17 @@ a:hover {
 
 #footer a {
 	color:black;
+}
+
+/* Iniciar Sesion */
+
+/* titulo */
+
+#titulo{
+	text-align: center;	
+}
+
+#titulo img{
+	width: 1000px;
+	height: 400px;
 }
