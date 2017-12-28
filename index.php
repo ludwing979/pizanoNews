@@ -12,11 +12,10 @@
 <div id="wrapper">
 	<div id="menu">
 		<ul>
-			<li class="current_page_item"><a href="#">Home</a></li>
+			<li class="current_page_item"><a href="index.php">Home</a></li>
 			<li><a href="enlaces.html">Enlaces</a></li>
 			<li><a href="contactos.html">Contacto</a></li>
 			<li><a href="login.php">Iniciar Sesión</a></li>
-			<li><a href="#"></a></li>
 		</ul>
 	</div>
 	<!-- end #menu -->
@@ -71,10 +70,6 @@
 					</form>
 					</div>
 					<div style="clear: both;">&nbsp;</div>
-				</li>
-				<li>
-					<h2>Alok, El Favorito de Brasil para el mundo!</h2>
-					<p>Mauris vitae nisl nec metus placerat perdiet est. Phasellus dapibus semper consectetuer hendrerit.</p>
 				</li>
 				<li>
 					<h2>Categorias</h2>
