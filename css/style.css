@@ -1,9 +1,11 @@
-
-#cuerpo {
+*{
 	margin: 0;
 	padding: 0;
-	background: #F1F1F1 url(images/img01.gif) repeat-x left top;
 	font-family: Arial, Helvetica, sans-serif;
+}
+
+#cuerpo {
+	background: #F1F1F1 url(../images/img01.gif) repeat-x left top;
 	font-size: 12px;
 	color: #787878;
 }
@@ -56,7 +58,7 @@ a:hover {
 	height: 280px;
 	margin: 0 auto;
 	padding: 0px;
-	background: url(images/pizano.jpg) no-repeat;
+	background: url(../images/pizano.jpg) no-repeat;
 	background-size: cover;
 	background-position: center center;
 }
@@ -171,7 +173,7 @@ a:hover {
 	height: 30px;
 	margin-right: 1px;
 	padding: 9px 0px 0px 0px;
-	background: url(images/img02.gif) no-repeat left top;
+	background: url(../images/img02.gif) no-repeat left top;
 	text-decoration: none;
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
@@ -195,7 +197,7 @@ a:hover {
 	width: 940px;
 	margin: 0 auto;
 	padding: 0px 0px 0px 40px;
-	background: url(images/img03.gif) repeat-y left top;
+	background: url(../images/img03.gif) repeat-y left top;
 }
 
 #page-bgtop {
@@ -214,7 +216,7 @@ a:hover {
 }
 
 .post {
-	background: url(images/img07.gif) no-repeat left 50px;
+	background: url(../images/img07.gif) no-repeat left 50px;
 	margin-bottom: 15px;
 }
 
@@ -258,7 +260,7 @@ a:hover {
 }
 
 .post .entry {
-	background: url(images/img08.gif) no-repeat left top;
+	background: url(../images/img08.gif) no-repeat left top;
 	padding: 0px 0px 20px 0px;
 	padding-bottom: 20px;
 	text-align: justify;
@@ -383,11 +385,72 @@ a:hover {
 
 /* titulo */
 
-#titulo{
-	text-align: center;	
+#formato{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
 }
 
-#titulo img{
-	width: 1000px;
-	height: 400px;
+#titulo{
+	height: 300px;
+	width: 800px;
+	background: url(../images/LogoPizzano.png) no-repeat;
+	background-size: cover;
+	background-position: center center;	
+}
+
+#fondo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+#formulario{
+	background: rgba(0,0,0,.3);
+	border-radius: 10px;
+	padding: 30px;
+}
+
+#formulario input{
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	height: 25px;
+	padding-left: 7px;
+	width: 400px;
+	height: 30px;
+	font-size: 14px;
+}
+
+#formulario input:focus{
+	-webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+}
+
+#formulario p{
+	font-size: 22px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+#formulario button{
+	margin-top: 20px;
+	width: 150px;
+	height: 40px;
+	border-radius: 20px;
+	outline: none;
+	border: none;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	font-size: 18px;
+	float: right;
+}	
+
+#formulario button:active{
+	background-color: rgba(0,0,0,.5);
+	transform: translateY(2px);
 }

@@ -6,8 +6,9 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<div id="titulo">
-		<img src="images/pizano.jpg">
+	<div id="formato">
+		<div id="titulo">
+		</div>
 	</div>
 	<div id="fondo">
 		<div id="formulario">
@@ -15,7 +16,7 @@
 			<input type="email" id="correo">
 			<p>Contraseña</p>
 			<input type="password" id="pass"><br>
-			<input type="submit" value="Ingresar" onclick="">
+			<button onclick="">Ingresar</button>
 		</div>
 	</div>
 </body>
