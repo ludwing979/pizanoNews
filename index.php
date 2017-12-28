@@ -75,7 +75,7 @@
 					<h2>Categorias</h2>
 					<ul>
 						<li><a href="#">Lo mas nuevo</a></li>
-						<li><a href="#">Música Nueva</a></li>
+						<li><a href="#">New Music</a></li>
 						<li><a href="#">Nuevos Artistas</a></li>
 						<li><a href="#">El DJ del Año</a></li>
 					</ul>
@@ -83,10 +83,10 @@
 				<li>
 					<h2>Archivos</h2>
 					<ul>
-						<li><a href="#">Canciones Populares</a></li>
+						<li><a href="#">Fresh Music & Mixes</a></li>
 						<li><a href="#">Underground</a></li>
 						<li><a href="#">Track del mes</a></li>
-						<li><a href="#">Nuevos Softwares Musicales</a></li>
+						<li><a href="#">Softwares Musicales</a></li>
 					</ul>
 				</li>
 			</ul>
