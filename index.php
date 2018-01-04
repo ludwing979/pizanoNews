@@ -1,15 +1,24 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.facebook.com/Marco.Pizzano1309//TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="https://www.facebook.com/Marco.Pizzano1309//xhtml">
+<?php require 'controles/session.php'; ?>
+<!DOCTYPE html>
+<html>
 <head>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>PizzanoNews:)</title>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+	<meta charset="utf-8">
+	<title>PizzanoNews</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="screen"/>
 </head>
 <body id="cuerpo">
 <div id="wrapper">
+	<?php if (isset($_SESSION['correo'])){ ?>
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="index.php">Home</a></li>
+			<li><a href="enlaces.html">Enlaces</a></li>
+			<li><a href="contactos.html">Contacto</a></li>
+			<li><a href="noticias.php">Publicar Noticia</a></li>
+			<li><a href="logout.php">Cerrar Sesión</a></li>
+		</ul>
+	</div>
+	<?php }else{ ?>
 	<div id="menu">
 		<ul>
 			<li class="current_page_item"><a href="index.php">Home</a></li>
@@ -18,6 +27,7 @@
 			<li><a href="login.php">Iniciar Sesión</a></li>
 		</ul>
 	</div>
+	<?php } ?>
 	<!-- end #menu -->
 	<div id="header">
 		<div id="logo">		
