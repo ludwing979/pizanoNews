@@ -2,7 +2,7 @@
 
 require 'conexion.php';
 
-$_keys = array('titulo','info','categoria');
+$_keys = array('titulo','fechaPublicacion','informacion','categoria');
 $missing = count($_keys) - 1;
 $columns = null;
 $values = null;
@@ -22,7 +22,6 @@ $values = substr($values, 0, -1);
 
 function validData($missing) {
     if ($missing > 0) {
-        echo "Por favor llena todos los campos";
         return false;
     }
     return true;
@@ -36,5 +35,7 @@ if (validData($missing)) {
     } else {
         echo "No se a podido llevar a cabo el registro";
     }
+}else{
+    echo 0;
 }
 ?>

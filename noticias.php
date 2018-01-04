@@ -32,13 +32,16 @@
         title = document.getElementById('titleNoticia').value;
         informacion = document.getElementById('info').value;
         categoria = document.getElementById('categoria').value;
+        f = new Date();
+		fecha = f.getFullYear() + "-" + (f.getMonth()+10) + "-" + (f.getDate()+10);
 
         fetch("controles/registrarNoticia.php", {
             method: 'POST',
             credentials: 'same-origin',
             body: JSON.stringify({
             	titulo: title,
-            	info: informacion,
+            	fechaPublicacion: fecha,
+            	informacion: informacion,
             	categoria: categoria,
         	}),
         })
@@ -53,7 +56,7 @@
                     location.assign('index.php');
                 }
                 else{
-                    console.log("no");
+                    alert("Por favor llena por completo los datos.");
                 }
 
             }
