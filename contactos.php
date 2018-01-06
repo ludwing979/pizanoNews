@@ -28,21 +28,21 @@
 		</ul>
 	</div>
 	<?php } ?>
-	<div>
+	<div id="contacto">
 		<img src="images/facebook.png"> <a href="https://www.facebook.com/marco.pizano">www.facebook.com/marco.pizano</a>
 	</div>
-	<div>
+	<div id="contacto">
 		<img src="images/Instagram.png"> <a href="https://www.instagram.com/marcopizano/?hl=es">www.instagram.com/marcopizano/?hl=es</a>
 	</div>
 
-	<div>
+	<div id="contacto">
 		<img src="images/twitter.png"> <a href="https://twitter.com/marcoivanpizano">twitter.com/marcoivanpizano</a>
 	</div>
-	<div>
+	<div id="contacto">
 		<img src="images/whats.jpg"> <p> 4423323803 LLamame bebé! :v </p>
 	</div>
-	<div>
-		<img src="images/snapcode.png"> <a href="https://www.snapchat.com/add/pizano130996">!¡Añádeme en Snapchat! Nombre de usuario: pizano130996!</a>
+	<div id="contacto">
+		<img src="images/snapcode.png"> <a href="https://www.snapchat.com/add/pizano130996">¡Añádeme en Snapchat! Nombre de usuario: pizano130996!</a>
 	</div>
 </div>
 </body>

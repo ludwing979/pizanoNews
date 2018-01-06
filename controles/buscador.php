@@ -2,7 +2,7 @@
 require 'conexion.php';
 
 $_POST = json_decode(file_get_contents('php://input'), true);
-$sql_noticias = "SELECT * FROM `noticias` WHERE categoria = '" . $_POST['idCategoria'] . "';";
+$sql_noticias = "SELECT * FROM `noticias` WHERE titulo = %'" . $_POST['titulo'] . "%';";
 $noticias = mysqli_query($conn, $sql_noticias);
 
 if (! is_bool($noticias)){
@@ -19,9 +19,9 @@ if (! is_bool($noticias)){
             echo '</div>';
         }
     } else {
-     echo "<h1><center>No hay noticias de esta categoría</center></h1>";
+     echo "<h1><center>No hay noticias que coincidan con la busqueda</center></h1>";
     }
 }else{
-    echo "<h1><center>No hay noticias de esta categoría</center></h1>";
+    echo "<h1><center>No hay noticias que coincidan con la busqueda</center></h1>";
 }
 ?>

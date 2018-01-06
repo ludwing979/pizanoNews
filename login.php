@@ -41,7 +41,6 @@
         )
         .then(
             result => {
-                console.log(result);
                 if (Number(result) == 1){
                     window.location.href = "index.php";
                 }else{

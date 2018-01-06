@@ -47,7 +47,7 @@
 					<form method="get" action="#">
 						<div>
 							<input type="text" name="s" id="search-text" value="" />
-							<input type="submit" id="search-submit" value="GO" />
+							<button id="search-submit" onclick="buscar()">Go</button>
 						</div>
 					</form>
 					</div>
@@ -81,7 +81,7 @@
 <script>
 	function noticias(){
         contenido = document.getElementById('content');
-        fetch("controles/anuncios.php",{
+        fetch("controles/news.php",{
             method: 'POST',
             body: JSON.stringify({
             	post: true,
@@ -101,6 +101,23 @@
             method: 'POST',
             body: JSON.stringify({
             	idCategoria: categoria,
+            })
+        })
+        .then(
+            response => response.text()
+        ).then(
+            html => {
+                contenido.innerHTML = html;
+            }
+        );
+    }
+
+    function buscar(){
+    	valor = document.getElementById('search-text').value;
+    	fetch("controles/buscador.php",{
+            method: 'POST',
+            body: JSON.stringify({
+            	titulo: valor,
             })
         })
         .then(
